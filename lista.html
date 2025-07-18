@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Confirmados</title>
+
+  <style>
+    /* Estilo geral da página */
+    body {
+      background: #221d2d;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    /* Container principal */
+    .container {
+      width: 100%;
+      max-width: 600px;
+      background: #121017;
+      border-radius: 24px;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.13);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 25px;
+    }
+
+    /* A lista ordenada */
+    .lista-confirmados {
+      list-style: none;
+      /* Remove os números padrão */
+      counter-reset: minha-lista;
+      /* Inicia um contador */
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Itens da lista */
+    .lista-confirmados li {
+      counter-increment: minha-lista;
+      /* Adiciona 1 ao contador a cada item */
+      background: #393446;
+      border-bottom: 1px solid #ffffff;
+      padding: 15px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+    /* Adiciona um número estilizado antes de cada item */
+    .lista-confirmados li::before {
+      content: counter(minha-lista);
+      font-weight: bold;
+      font-size: 1.2em;
+      color: #ffffff;
+      background-color: #28a745;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+      /* Impede que o número encolha */
+    }
+
+    /* Total de confirmados */
+    .total {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 1.1em;
+      color: #ffffff;
+    }
+
+    .card a {
+      display: grid;
+      color: rgb(248, 248, 248);
+      font-size: 16px;
+      place-items: center;
+      border: 1PX solid #fff;
+      border-image: initial;
+      padding: 16px 26px;
+      border-radius: 40px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: .2s ease-in-out;
+    }
+
+    .card a:hover {
+      background: #ffffff28;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>✅ Lista de Confirmados</h1>
+
+    <ol class="lista-confirmados">
+      <li>Rafael</li>
+
+    </ol>
+
+    <p class="total">
+      <strong>Total:</strong> 0 Pessoas Confirmadas
+    </p>
+
+    <div class="card">
+      <a href="index.html">voltar</a>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>
