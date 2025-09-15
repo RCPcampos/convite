@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="party-popper.png" type="image/x-icon">
+    <title>Convite</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            background: #221d2d;
+            color: #fdfcfd;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 90vw;
+            max-width: 650px;
+            padding: 30px 20px;
+            background: #121017;
+            border-radius: 24px;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.13);
+        }
+
+        .card img {
+            max-width: 280px;
+            width: 35vw;
+            height: auto;
+            object-fit: cover;
+            margin-left: -30px;
+            margin-right: 30px;
+            border-radius: inherit;
+            box-shadow: 0 60px 40px rgb(0 0 0 /8%);
+        }
+
+        .card h2 {
+            font-size: 26px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 10px 0;
+        }
+
+        .secundario {
+            font-size: 13px;
+            opacity: 0.8;
+            color: #fff;
+        }
+
+        .card a {
+            display: grid;
+            color: rgb(248, 248, 248);
+            font-size: 16px;
+            place-items: center;
+            border: 1PX solid #fff;
+            border-image: initial;
+            padding: 16px 26px;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: .2s ease-in-out;
+        }
+
+        .card a:hover {
+            background: #ffffff28;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .card img {
+                width: 80%;
+                max-width: 250px;
+                height: auto;
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="quebrador.jpeg" alt="">
+        <div>
+            <h2>Rafael Campos</h2>
+            <h3>Quebrador de Código</h3>
+            <p>Nesta vida marota mais um ano ficou para trás, muito cuidado meninas, estou ficando rapaz</p>
+            <p class="secundario">Que tal um dia de sol e piscina pra comemorar meu aniversário? Vem, amiguinho(a)! Vai
+                ser muito legal!</p>
+            <p>Quando? </p>
+            <p>21/09/2025 às 8:30 da madrugada </p>
+            <div class="link">
+                <a href="https://maps.app.goo.gl/VEL6KASXiPKw6k4W8" target="_blank" rel="noopener">Localização</a>
+                <a href=""
+                    onclick="window.open('https://wa.me/5512982116198?text=Sou%20gay%20e%20vou%20na%20festa', '_blank')">Confirmar
+                    presença</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
